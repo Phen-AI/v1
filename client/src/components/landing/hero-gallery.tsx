@@ -238,7 +238,7 @@ export default function HeroGallery() {
               initial={{ opacity: 0, y: 18 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -18 }}
-              transition={{ duration: 0.58 }}
+              transition={{ duration: 1.5 }}
               className="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold leading-tight tracking-tight"
             >
               {heroTexts[headline]}
