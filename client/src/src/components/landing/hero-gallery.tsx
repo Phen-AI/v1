@@ -114,7 +114,7 @@ export default function HeroGallery() {
     const ry = Math.max(200, Math.min(rx * 0.40, 340));
 
     // Timing
-    const duration = 4; // seconds per 270° path
+    const duration = 2; // seconds per 270° path
     const PAUSE = 2;    // <-- 2s delay after each rotation
 
     // Prime at t=0
