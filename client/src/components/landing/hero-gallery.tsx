@@ -114,7 +114,7 @@ export default function HeroGallery() {
     const ry = Math.max(200, Math.min(rx * 0.40, 340));
 
     // Timing
-    const duration = 2; // seconds per 270° path
+    const duration = 4; // seconds per 270° path
     const PAUSE = 2;    // <-- 2s delay after each rotation
 
     // Prime at t=0
@@ -238,7 +238,7 @@ export default function HeroGallery() {
               initial={{ opacity: 0, y: 18 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -18 }}
-              transition={{ duration: 1.5 }}
+              transition={{ duration: 0.28 }}
               className="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold leading-tight tracking-tight"
             >
               {heroTexts[headline]}
