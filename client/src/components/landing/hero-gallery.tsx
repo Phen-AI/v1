@@ -1,5 +1,6 @@
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { Link } from "wouter";
 
 /* -------- Headline & Assets -------- */
 const heroTexts = ["Phen AI", "Phenomenal AI"];
@@ -246,18 +247,16 @@ export default function HeroGallery() {
           </AnimatePresence>
 
           <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="/contact"
-              className="rounded-full bg-primary px-5 py-3 font-semibold text-primary-foreground shadow-sm transition-all hover:scale-105 hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
-            >
-              Schedule a Consultation
-            </a>
-            <a
-              href="/industries"
-              className="rounded-full bg-white/70 px-5 py-3 font-semibold text-black/80 backdrop-blur transition-all hover:scale-105 hover:bg-white/80 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
-            >
-              Explore Our Work
-            </a>
+            <Link href="/contact">
+              <a className="rounded-full bg-primary px-5 py-3 font-semibold text-primary-foreground shadow-sm transition-all hover:scale-105 hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2">
+                Schedule a Consultation
+              </a>
+            </Link>
+            <Link href="/industries">
+              <a className="rounded-full bg-white/70 px-5 py-3 font-semibold text-black/80 backdrop-blur transition-all hover:scale-105 hover:bg-white/80 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2">
+                Explore Our Work
+              </a>
+            </Link>
           </div>
         </div>
       </div>

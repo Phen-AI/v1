@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "wouter";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Linkedin, Twitter } from "lucide-react";
 import Header from "@/components/layout/header";
@@ -254,12 +255,11 @@ export default function About() {
               We're always looking for talented individuals who share our passion for
               building intelligent systems that make a real difference.
             </p>
-            <a
-              href="/contact"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground rounded-lg font-semibold text-lg hover:bg-primary/90 transition-all hover:scale-105"
-            >
-              Get in Touch
-            </a>
+            <Link href="/contact">
+              <a className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground rounded-lg font-semibold text-lg hover:bg-primary/90 transition-all hover:scale-105">
+                Get in Touch
+              </a>
+            </Link>
           </motion.section>
         </div>
       </main>
