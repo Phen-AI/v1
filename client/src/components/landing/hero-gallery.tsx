@@ -246,7 +246,7 @@ export default function HeroGallery() {
             </motion.h1>
           </AnimatePresence>
 
-          <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="mt-6 flex flex-col sm:flex-row gap-6 sm:gap-4 justify-center">
             <Link href="/contact">
               <a className="rounded-full bg-primary px-5 py-3 font-semibold text-primary-foreground shadow-sm transition-all hover:scale-105 hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2">
                 Schedule a Consultation

@@ -118,14 +118,14 @@ export default function GapReveal() {
       <div className="absolute inset-0 flex items-center justify-center gap-8 pointer-events-none">
         <h2
           ref={leftWordRef}
-          className="text-6xl sm:text-7xl lg:text-8xl xl:text-9xl font-serif font-black  tracking-tighter text-black"
+          className="text-[11vw] sm:text-7xl lg:text-8xl xl:text-9xl font-serif font-black  tracking-tighter text-black"
           style={{ letterSpacing: '-0.02em' }}
         >
           We are
         </h2>
         <h2
           ref={rightWordRef}
-          className="text-6xl sm:text-7xl lg:text-8xl xl:text-9xl font-serif font-black  tracking-tighter text-black"
+          className="text-[11vw] sm:text-7xl lg:text-8xl xl:text-9xl font-serif font-black  tracking-tighter text-black"
           style={{ letterSpacing: '-0.02em' }}
         >
           Phen AI
