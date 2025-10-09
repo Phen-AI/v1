@@ -90,6 +90,12 @@
     border: 1px solid rgba(255, 255, 255, 0.15);
   }
 
+  .mobile-menu.glass-strong {
+    background: rgba(12, 18, 32, 0.82);
+    backdrop-filter: blur(28px);
+    border-color: rgba(255, 255, 255, 0.12);
+  }
+
   .light .glass {
     background: rgba(0, 0, 0, 0.03);
     backdrop-filter: blur(10px);
@@ -100,6 +106,12 @@
     background: rgba(0, 0, 0, 0.05);
     backdrop-filter: blur(20px);
     border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .light .mobile-menu.glass-strong {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(24px);
+    border-color: rgba(0, 0, 0, 0.08);
   }
 
   /* 3D transforms */
