@@ -158,7 +158,7 @@ export default function About() {
     initial={{ opacity: 0, y: 24 }}
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true, margin: "-100px" }}
-    className="rounded-2xl max-w-5xl mx-auto p-10 sm:p-12 bg-card border border-border shadow-sm"
+    className="rounded-2xl max-w-5xl mx-auto p-10 sm:p-12 bg-gradient-to-br border border-border shadow-sm"
   >
 
     {/* Intro – left aligned for readability */}
