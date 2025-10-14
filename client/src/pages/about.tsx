@@ -84,27 +84,27 @@ export default function About() {
 
   const timeline = [
     {
-      year: "2018",
+      year: "2024",
       title: "Foundation",
       description: "Phen AI was founded with a mission to make AI accessible and practical for enterprises across industries.",
     },
     {
-      year: "2019",
+      year: "2024",
       title: "First Major Client",
       description: "Deployed our first large-scale AI solution for agricultural crop monitoring, achieving 94% accuracy in disease detection.",
     },
     {
-      year: "2020",
+      year: "2025",
       title: "VR/AR Expansion",
       description: "Launched immersive training platform for healthcare professionals, revolutionizing medical education.",
     },
     {
-      year: "2022",
+      year: "2025",
       title: "On-Premise Solutions",
       description: "Pioneered secure, on-premise AI deployments for regulated industries including legal and finance sectors.",
     },
     {
-      year: "2024",
+      year: "2025",
       title: "Global Impact",
       description: "Serving clients across 6 major industries with AI solutions that have generated over $50M in measurable business value.",
     },
