@@ -158,13 +158,8 @@ export default function About() {
     initial={{ opacity: 0, y: 24 }}
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true, margin: "-100px" }}
-    className="rounded-2xl max-w-5xl mx-auto p-10 sm:p-12 bg-neutral-900/50 ring-1 ring-white/10 shadow-lg"
+    className="rounded-2xl max-w-5xl mx-auto p-10 sm:p-12 bg-card border border-border shadow-sm"
   >
-    {/* Title */}
-    <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-semibold tracking-tight text-center">
-      About Phen AI
-    </h1>
-    <div className="w-16 h-1 bg-primary mx-auto mt-4 mb-8 rounded-full" />
 
     {/* Intro – left aligned for readability */}
     <div className="mx-auto max-w-4xl text-left space-y-5">
