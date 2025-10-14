@@ -143,7 +143,7 @@ export default function About() {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-center mb-20"
+            className="glass-strong rounded-2xl p-10 sm:p-12 text-center mb-20"
           >
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold mb-6">
               About Phen AI
@@ -158,7 +158,8 @@ export default function About() {
     initial={{ opacity: 0, y: 24 }}
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true, margin: "-100px" }}
-    className="rounded-2xl max-w-5xl mx-auto p-10 sm:p-12 bg-gradient-to-br border border-border shadow-sm"
+    className="glass-strong rounded-2xl max-w-5xl mx-auto p-10 sm:p-12"
+"
   >
 
     {/* Intro – left aligned for readability */}
