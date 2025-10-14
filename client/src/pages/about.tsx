@@ -149,30 +149,85 @@ export default function About() {
               About Phen AI
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Engineering intelligence you can trust—delivering elegant systems with
-              measurable impact since 2018
+              At Phen AI, we believe artificial intelligence isn’t just a tool — it’s a turning point in how humanity works, learns, and creates.
             </p>
           </motion.div>
 
           {/* Vision & Mission */}
-          <section className="mb-32">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="glass-strong rounded-2xl p-12 text-center max-w-4xl mx-auto"
-            >
-              <h2 className="text-3xl sm:text-4xl font-serif font-semibold leading-relaxed mb-6">
-                We design intelligence you can trust—
-                <br />
-                elegant systems that deliver measurable value.
-              </h2>
-              <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
-              <p className="text-xl text-muted-foreground">
-                Not just an AI company—your engineering partner for lasting impact.
-              </p>
-            </motion.div>
-          </section>
+  <section className="mb-32">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="glass-strong rounded-2xl p-12 text-center max-w-4xl mx-auto"
+        >
+          <h2 className="text-3xl sm:text-4xl font-serif font-semibold leading-relaxed mb-6 text-center">
+            Our journey began with a clear vision: to make the power of AI accessible,
+            purposeful, and profoundly human. What started as a small team of
+            innovators and designers with a shared obsession for intelligent systems
+            has evolved into a company building the next generation of digital
+            transformation — one solution at a time.
+          </h2>
+      
+          <p className="text-xl text-muted-foreground mb-4">
+            We design intelligent ecosystems — not just chatbots or automations, but
+            connected experiences that think, adapt, and scale with the people they
+            serve. From AI-powered customer engagement to workflow automation and
+            immersive training environments, Phen AI exists to bridge creativity,
+            logic, and technology into something truly transformational.
+          </p>
+      
+          <p className="text-xl text-muted-foreground mb-4">
+            Across industries like agriculture, education, finance, legal, renewables,
+            and supply chain, we empower organizations to see beyond limitations — to
+            use AI as a catalyst for efficiency, insight, and imagination.
+          </p>
+      
+          <div className="w-24 h-1 bg-primary mx-auto my-8"></div>
+      
+          <h3 className="text-2xl sm:text-3xl font-serif font-semibold mb-4">
+            The Team Behind Phen AI
+          </h3>
+      
+          <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+            We’re a multidisciplinary team of engineers, designers, and strategists
+            driven by one shared goal — to redefine how businesses interact with
+            intelligence.
+            <br />
+            <br />
+            Each member brings expertise from fields like software engineering,
+            product design, and AI research, creating the perfect balance between
+            logic and creativity. Together, we turn ambitious ideas into intelligent
+            realities.
+          </p>
+      
+          <h3 className="text-2xl sm:text-3xl font-serif font-semibold mb-4">
+            Our Core Principles
+          </h3>
+      
+          <p className="text-xl text-muted-foreground leading-relaxed text-center">
+            <em>Simplicity in Innovation</em> – AI should simplify decisions, not
+            complicate them.
+            <br />
+            <em>Transparency in Execution</em> – Every solution should earn trust
+            through clarity.
+            <br />
+            <em>Scalability by Design</em> – Systems that grow as our clients grow.
+            <br />
+            <em>Human-Centric Intelligence</em> – Every product begins with empathy,
+            not algorithms.
+            <br />
+            <br />
+            Phen AI stands at the intersection of intelligence and intuition — where
+            automation meets artistry, and data meets design. We’re not just building
+            AI solutions; we’re building a future where technology understands people
+            as deeply as people understand purpose.
+            <br />
+            <br />
+            Because at Phen AI, intelligence isn’t artificial — it’s phenomenal.
+          </p>
+        </motion.div>
+   </section>
 
           {/* Timeline */}
           <section className="mb-32">
