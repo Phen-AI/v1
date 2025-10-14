@@ -99,13 +99,15 @@ export default function About() {
       title: "Integrity",
       description:
         "We build AI systems that are ethical, explainable, and aligned with our clients' values.",
-      icon: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z",
+      icon:
+        "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z",
     },
     {
       title: "Partnership",
       description:
         "We work as an extension of your team, committed to your long-term success and growth.",
-      icon: "M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z",
+      icon:
+        "M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z",
     },
   ];
 
@@ -126,39 +128,48 @@ export default function About() {
             </p>
           </section>
 
-          {/* =================== INTRO (UNBOXED) =================== */}
+          {/* =================== INTRO (GLASS CARD) =================== */}
           <section className="mb-16 sm:mb-20">
-            <div className="max-w-4xl mx-auto space-y-5 text-left">
-              <p className="text-lg sm:text-xl leading-relaxed text-foreground/80">
-                Our journey began with a clear vision: to make the power of AI accessible,
-                purposeful, and profoundly human. What started as a small team of
-                innovators and designers with a shared obsession for intelligent systems
-                has evolved into a company building the next generation of digital
-                transformation — one solution at a time.
-              </p>
-              <p className="text-lg sm:text-xl leading-relaxed text-foreground/80">
-                We design intelligent ecosystems — not just chatbots or automations, but
-                connected experiences that think, adapt, and scale with the people they
-                serve. From AI-powered customer engagement to workflow automation and
-                immersive training environments, Phen AI bridges creativity, logic, and
-                technology into something truly transformational.
-              </p>
-              <p className="text-lg sm:text-xl leading-relaxed text-foreground/80">
-                Across industries like agriculture, education, finance, legal, renewables,
-                and supply chain, we help organizations use AI as a catalyst for
-                efficiency, insight, and imagination.
-              </p>
+            <div
+              className="
+                glass-strong rounded-xl sm:rounded-2xl max-w-5xl mx-auto p-8 sm:p-12
+                backdrop-blur-md ring-1 bg-black/5 ring-black/10 dark:bg-white/5 dark:ring-white/10
+              "
+            >
+              <div className="mx-auto max-w-4xl space-y-5 text-left">
+                <p className="text-lg sm:text-xl leading-relaxed text-foreground/80">
+                  Our journey began with a clear vision: to make the power of AI
+                  accessible, purposeful, and profoundly human. What started as a small
+                  team of innovators and designers with a shared obsession for intelligent
+                  systems has evolved into a company building the next generation of
+                  digital transformation — one solution at a time.
+                </p>
+                <p className="text-lg sm:text-xl leading-relaxed text-foreground/80">
+                  We design intelligent ecosystems — not just chatbots or automations, but
+                  connected experiences that think, adapt, and scale with the people they
+                  serve. From AI-powered customer engagement to workflow automation and
+                  immersive training environments, Phen AI bridges creativity, logic, and
+                  technology into something truly transformational.
+                </p>
+                <p className="text-lg sm:text-xl leading-relaxed text-foreground/80">
+                  Across industries like agriculture, education, finance, legal,
+                  renewables, and supply chain, we help organizations use AI as a catalyst
+                  for efficiency, insight, and imagination.
+                </p>
+              </div>
             </div>
           </section>
 
-          {/* =================== TEAM (OWN BOX) =================== */}
+          {/* =================== TEAM (OWN GLASS CARD) =================== */}
           <section className="mb-16 sm:mb-20">
             <motion.div
               initial={{ opacity: 0, y: 18 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
-              className="glass-strong rounded-xl sm:rounded-2xl max-w-5xl mx-auto p-8 sm:p-12
-                         backdrop-blur-md border border-white/10 bg-white/5 dark:bg-white/5"
+              className="
+                glass-strong rounded-xl sm:rounded-2xl max-w-5xl mx-auto p-8 sm:p-12
+                backdrop-blur-md ring-1 bg-black/5 ring-black/10 dark:bg-white/5 dark:ring-white/10
+              "
             >
               <h2 className="text-2xl sm:text-3xl font-serif font-semibold tracking-tight text-center">
                 The Team Behind Phen AI
@@ -178,44 +189,41 @@ export default function About() {
             </motion.div>
           </section>
 
-          {/* =================== CORE PRINCIPLES (OWN BOX) =================== */}
+          {/* =================== CORE PRINCIPLES (OWN GLASS CARD) =================== */}
           <section className="mb-24">
             <motion.div
               initial={{ opacity: 0, y: 18 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
-              className="glass-strong rounded-xl sm:rounded-2xl max-w-5xl mx-auto p-8 sm:p-12
-                         backdrop-blur-md border border-white/10 bg-white/5 dark:bg-white/5"
+              className="
+                glass-strong rounded-xl sm:rounded-2xl max-w-5xl mx-auto p-8 sm:p-12
+                backdrop-blur-md ring-1 bg-black/5 ring-black/10 dark:bg-white/5 dark:ring-white/10
+              "
             >
               <h2 className="text-2xl sm:text-3xl font-serif font-semibold tracking-tight text-center">
                 Our Core Principles
               </h2>
 
+              {/* Adaptive tiles: visible on light & dark */}
               <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div className="rounded-xl p-5 bg-white/5 ring-1 ring-white/10">
-                  <h3 className="font-medium">Simplicity in Innovation</h3>
-                  <p className="text-sm text-foreground/70 mt-1">
-                    AI should simplify decisions, not complicate them.
-                  </p>
-                </div>
-                <div className="rounded-xl p-5 bg-white/5 ring-1 ring-white/10">
-                  <h3 className="font-medium">Transparency in Execution</h3>
-                  <p className="text-sm text-foreground/70 mt-1">
-                    Every solution should earn trust through clarity.
-                  </p>
-                </div>
-                <div className="rounded-xl p-5 bg-white/5 ring-1 ring-white/10">
-                  <h3 className="font-medium">Scalability by Design</h3>
-                  <p className="text-sm text-foreground/70 mt-1">
-                    Systems that grow as our clients grow.
-                  </p>
-                </div>
-                <div className="rounded-xl p-5 bg-white/5 ring-1 ring-white/10">
-                  <h3 className="font-medium">Human-Centric Intelligence</h3>
-                  <p className="text-sm text-foreground/70 mt-1">
-                    Every product begins with empathy, not algorithms.
-                  </p>
-                </div>
+                {[
+                  ["Simplicity in Innovation", "AI should simplify decisions, not complicate them."],
+                  ["Transparency in Execution", "Every solution should earn trust through clarity."],
+                  ["Scalability by Design", "Systems that grow as our clients grow."],
+                  ["Human-Centric Intelligence", "Every product begins with empathy, not algorithms."],
+                ].map(([title, desc]) => (
+                  <div
+                    key={title}
+                    className="
+                      rounded-xl p-5 backdrop-blur-sm ring-1
+                      bg-black/5 ring-black/10
+                      dark:bg-white/5 dark:ring-white/10
+                    "
+                  >
+                    <h3 className="font-medium">{title}</h3>
+                    <p className="text-sm text-foreground/70 mt-1">{desc}</p>
+                  </div>
+                ))}
               </div>
 
               <p className="mt-10 text-center text-base sm:text-lg text-foreground/80 max-w-3xl mx-auto">
@@ -247,7 +255,7 @@ export default function About() {
                     <div className="absolute left-0 top-0 w-16 h-16 rounded-full bg-gradient-to-br from-primary to-secondary text-white hidden md:flex items-center justify-center font-bold">
                       {item.year}
                     </div>
-                    <div className="glass-strong rounded-xl p-8">
+                    <div className="glass-strong rounded-xl p-8 ring-1 bg-black/5 ring-black/10 dark:bg-white/5 dark:ring-white/10">
                       <div className="md:hidden text-primary font-bold mb-2">
                         {item.year}
                       </div>
@@ -262,7 +270,9 @@ export default function About() {
 
           {/* =================== VALUES =================== */}
           <section className="mb-32">
-            <h2 className="text-3xl font-serif font-bold mb-12 text-center">Our Values</h2>
+            <h2 className="text-3xl font-serif font-bold mb-12 text-center">
+              Our Values
+            </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               {values.map((value, index) => (
                 <motion.div
@@ -271,7 +281,10 @@ export default function About() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="glass-strong rounded-xl p-6 text-center hover:bg-white/10 transition-colors"
+                  className="
+                    glass-strong rounded-xl p-6 text-center hover:bg-white/10 transition-colors
+                    ring-1 bg-black/5 ring-black/10 dark:bg-white/5 dark:ring-white/10
+                  "
                 >
                   <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center mx-auto mb-4">
                     <svg
@@ -300,7 +313,10 @@ export default function About() {
             initial={{ opacity: 0, y: 18 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="glass-strong rounded-2xl p-12 text-center"
+            className="
+              glass-strong rounded-2xl p-12 text-center
+              ring-1 bg-black/5 ring-black/10 dark:bg-white/5 dark:ring-white/10
+            "
           >
             <h2 className="text-3xl font-serif font-bold mb-4">Join Our Mission</h2>
             <p className="text-lg text-foreground/80 mb-8 max-w-2xl mx-auto">
@@ -316,9 +332,9 @@ export default function About() {
         </div>
       </main>
 
-      {/* Team Member Modal (kept for future team grid) */}
+      {/* Team Member Modal */}
       <Dialog open={!!selectedMember} onOpenChange={() => setSelectedMember(null)}>
-        <DialogContent className="glass-strong max-w-2xl border-border">
+        <DialogContent className="glass-strong max-w-2xl border-border ring-1 bg-black/5 ring-black/10 dark:bg-white/5 dark:ring-white/10">
           {selectedMember && (
             <div>
               <div className="flex items-start gap-6 mb-6">
