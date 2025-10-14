@@ -159,8 +159,8 @@ export default function About() {
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true, margin: "-100px" }}
     className="glass-strong rounded-2xl max-w-5xl mx-auto p-10 sm:p-12"
-"
-  >
+    
+    >
 
     {/* Intro – left aligned for readability */}
     <div className="mx-auto max-w-4xl text-left space-y-5">
