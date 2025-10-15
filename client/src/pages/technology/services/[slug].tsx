@@ -111,8 +111,8 @@ export default function ServiceDetail() {
                     viewport={{ once: true }}
                     className="flex items-start gap-4 glass rounded-xl p-6"
                   >
-                    <div className="w-8 h-8 rounded-full bg-secondary/20 flex items-center justify-center flex-shrink-0">
-                      <div className="w-2 h-2 rounded-full bg-secondary"></div>
+                    <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
+                      <Check className="w-5 h-5 text-primary" />
                     </div>
                     <p className="text-muted-foreground">{capability}</p>
                   </motion.div>
