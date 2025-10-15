@@ -72,7 +72,7 @@ export default function About() {
           {/* HERO (no box) */}
           <section className="mb-16 text-center">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold">
-              Abot Phen AI
+              About Phen AI
             </h1>
             <p className="mt-4 text-lg sm:text-xl text-foreground/80 max-w-3xl mx-auto">
               At Phen AI, we believe artificial intelligence isn’t just a tool — it’s a
