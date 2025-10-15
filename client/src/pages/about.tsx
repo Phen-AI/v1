@@ -16,11 +16,10 @@ export default function About() {
     if (!window.gsap || !window.ScrollTrigger) return;
 
     const tweens: any[] = [];
-
-    // Timeline reveal
     const timelineItems = window.gsap.utils?.toArray?.(
       ".timeline-item"
     ) as HTMLElement[] | undefined;
+
     if (timelineItems?.length) {
       timelineItems.forEach((item, index) => {
         const t = window.gsap.fromTo(
@@ -117,26 +116,21 @@ export default function About() {
 
       <main className="pt-32 pb-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* =================== HERO (NO BOX) =================== */}
-          <section className="mb-16 sm:mb-20 text-center">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold [text-wrap:balance]">
+          {/* HERO */}
+          <section className="mb-16 text-center">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold">
               About Phen AI
             </h1>
-            <p className="mt-4 text-lg sm:text-xl text-foreground/80 max-w-3xl mx-auto [text-wrap:pretty]">
+            <p className="mt-4 text-lg sm:text-xl text-foreground/80 max-w-3xl mx-auto">
               At Phen AI, we believe artificial intelligence isn’t just a tool — it’s a
               turning point in how humanity works, learns, and creates.
             </p>
           </section>
 
-          {/* =================== INTRO (GLASS CARD) =================== */}
-          <section className="mb-16 sm:mb-20">
-            <div
-              className="
-                glass-strong rounded-xl sm:rounded-2xl max-w-5xl mx-auto p-8 sm:p-12
-                backdrop-blur-md ring-1 bg-black/5 ring-black/10 dark:bg-white/5 dark:ring-white/10
-              "
-            >
-              <div className="mx-auto max-w-4xl space-y-5 text-left">
+          {/* INTRO (GLASS CARD) */}
+          <section className="mb-20">
+            <div className="glass-strong rounded-xl sm:rounded-2xl max-w-5xl mx-auto p-8 sm:p-12 backdrop-blur-md ring-1 bg-black/5 ring-black/10 dark:bg-white/5 dark:ring-white/10">
+              <div className="max-w-4xl mx-auto space-y-5 text-left">
                 <p className="text-lg sm:text-xl leading-relaxed text-foreground/80">
                   Our journey began with a clear vision: to make the power of AI
                   accessible, purposeful, and profoundly human. What started as a small
@@ -160,21 +154,13 @@ export default function About() {
             </div>
           </section>
 
-          {/* =================== TEAM (OWN GLASS CARD) =================== */}
-          <section className="mb-16 sm:mb-20">
-            <motion.div
-              initial={{ opacity: 0, y: 18 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-80px" }}
-              className="
-                glass-strong rounded-xl sm:rounded-2xl max-w-5xl mx-auto p-8 sm:p-12
-                backdrop-blur-md ring-1 bg-black/5 ring-black/10 dark:bg-white/5 dark:ring-white/10
-              "
-            >
-              <h2 className="text-2xl sm:text-3xl font-serif font-semibold tracking-tight text-center">
-                The Team Behind Phen AI
-              </h2>
-              <div className="mx-auto max-w-3xl mt-4 text-left">
+          {/* TEAM */}
+          <section className="mb-20">
+            <h2 className="text-3xl font-serif font-semibold text-center mb-8">
+              The Team Behind Phen AI
+            </h2>
+            <div className="glass-strong rounded-xl sm:rounded-2xl max-w-5xl mx-auto p-8 sm:p-12 backdrop-blur-md ring-1 bg-black/5 ring-black/10 dark:bg-white/5 dark:ring-white/10">
+              <div className="mx-auto max-w-3xl text-left">
                 <p className="text-lg leading-relaxed text-foreground/80">
                   We’re a multidisciplinary team of engineers, designers, and strategists
                   driven by one shared goal — to redefine how businesses interact with
@@ -186,26 +172,16 @@ export default function About() {
                   Together, we turn ambitious ideas into intelligent realities.
                 </p>
               </div>
-            </motion.div>
+            </div>
           </section>
 
-          {/* =================== CORE PRINCIPLES (OWN GLASS CARD) =================== */}
+          {/* CORE PRINCIPLES */}
           <section className="mb-24">
-            <motion.div
-              initial={{ opacity: 0, y: 18 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-80px" }}
-              className="
-                glass-strong rounded-xl sm:rounded-2xl max-w-5xl mx-auto p-8 sm:p-12
-                backdrop-blur-md ring-1 bg-black/5 ring-black/10 dark:bg-white/5 dark:ring-white/10
-              "
-            >
-              <h2 className="text-2xl sm:text-3xl font-serif font-semibold tracking-tight text-center">
-                Our Core Principles
-              </h2>
-
-              {/* Adaptive tiles: visible on light & dark */}
-              <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <h2 className="text-3xl font-serif font-semibold text-center mb-8">
+              Our Core Principles
+            </h2>
+            <div className="glass-strong rounded-xl sm:rounded-2xl max-w-5xl mx-auto p-8 sm:p-12 backdrop-blur-md ring-1 bg-black/5 ring-black/10 dark:bg-white/5 dark:ring-white/10">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {[
                   ["Simplicity in Innovation", "AI should simplify decisions, not complicate them."],
                   ["Transparency in Execution", "Every solution should earn trust through clarity."],
@@ -214,11 +190,7 @@ export default function About() {
                 ].map(([title, desc]) => (
                   <div
                     key={title}
-                    className="
-                      rounded-xl p-5 backdrop-blur-sm ring-1
-                      bg-black/5 ring-black/10
-                      dark:bg-white/5 dark:ring-white/10
-                    "
+                    className="rounded-xl p-5 backdrop-blur-sm ring-1 bg-black/5 ring-black/10 dark:bg-white/5 dark:ring-white/10"
                   >
                     <h3 className="font-medium">{title}</h3>
                     <p className="text-sm text-foreground/70 mt-1">{desc}</p>
@@ -232,10 +204,10 @@ export default function About() {
                 AI solutions; we’re building a future where technology understands people
                 as deeply as people understand purpose.
               </p>
-            </motion.div>
+            </div>
           </section>
 
-          {/* =================== TIMELINE =================== */}
+          {/* JOURNEY */}
           <section className="mb-32">
             <h2 className="text-3xl font-serif font-bold mb-12 text-center">
               Our Journey
@@ -268,7 +240,7 @@ export default function About() {
             </div>
           </section>
 
-          {/* =================== VALUES =================== */}
+          {/* VALUES */}
           <section className="mb-32">
             <h2 className="text-3xl font-serif font-bold mb-12 text-center">
               Our Values
@@ -281,10 +253,7 @@ export default function About() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="
-                    glass-strong rounded-xl p-6 text-center hover:bg-white/10 transition-colors
-                    ring-1 bg-black/5 ring-black/10 dark:bg-white/5 dark:ring-white/10
-                  "
+                  className="glass-strong rounded-xl p-6 text-center hover:bg-white/10 transition-colors ring-1 bg-black/5 ring-black/10 dark:bg-white/5 dark:ring-white/10"
                 >
                   <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center mx-auto mb-4">
                     <svg
@@ -308,15 +277,12 @@ export default function About() {
             </div>
           </section>
 
-          {/* =================== CTA =================== */}
+          {/* CTA */}
           <motion.section
             initial={{ opacity: 0, y: 18 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="
-              glass-strong rounded-2xl p-12 text-center
-              ring-1 bg-black/5 ring-black/10 dark:bg-white/5 dark:ring-white/10
-            "
+            className="glass-strong rounded-2xl p-12 text-center ring-1 bg-black/5 ring-black/10 dark:bg-white/5 dark:ring-white/10"
           >
             <h2 className="text-3xl font-serif font-bold mb-4">Join Our Mission</h2>
             <p className="text-lg text-foreground/80 mb-8 max-w-2xl mx-auto">
@@ -332,7 +298,7 @@ export default function About() {
         </div>
       </main>
 
-      {/* Team Member Modal */}
+      {/* TEAM MEMBER MODAL */}
       <Dialog open={!!selectedMember} onOpenChange={() => setSelectedMember(null)}>
         <DialogContent className="glass-strong max-w-2xl border-border ring-1 bg-black/5 ring-black/10 dark:bg-white/5 dark:ring-white/10">
           {selectedMember && (
